@@ -1,4 +1,4 @@
-// Operating Systems in medical Devices (eg., heart monitors): Must 
+// Operating Systems in medical Devices (eg., heart monitors): Must priritize high - urgency taks like 
 
 
 #include<iostream>
