@@ -1,0 +1,16 @@
+Dockers:
+    5 important things:
+        Engine -> access specifier ivanga tha seivanga
+        Image -> no need get from google or from admin
+        Files -> push or pull files
+        Registry -> like repository
+        Hub -> platform
+
+    To get image:
+        docker-img pull url
+
+    To get image with specified width and height
+        docker pull -g -b 80:80 image_name (g --> gain, b --> breadth)
+
+    
+    
