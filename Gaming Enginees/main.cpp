@@ -34,10 +34,6 @@ public:
 
     void deallocate(void* ptr, int size) {
         int index = (char*)ptr - pool;
-        if (index < 0 || index + size > pool_size) {
-            cout << "Invalid deallocation request!\n";
-            return;
-        }
         for (int i = index; i < index + size; i++) {
             used[i] = false;
         }
@@ -47,10 +43,11 @@ public:
 
 int main() {
     MemoryPool mp;
-    void* block = mp.allocate(100);
-    if (block != nullptr) {
-        cout << "Allocated 100 bytes successfully.\n";
-    }
-    mp.deallocate(block, 100);
+    void* block = mp.allocate(128);
+    cout<<"Memory Loaded\n";
+    void* block = mp.allocate(256);
+    cout<<"Memory Loaded\n";
+    mp.deallocate(block, 128);
+    cout<<"Memory Unloaded\n";
     return 0;
 }

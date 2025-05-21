@@ -10,6 +10,7 @@ sem_t ticket_lock;
 // void book_ticket(int user_id){ // user_id = 1001
 // data type should not be used.
 // void do not store the data but it can hold address
+
 void* book_ticket(void* arg) {
     int user_id = *(int*)arg;
 
